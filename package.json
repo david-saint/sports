@@ -1,0 +1,27 @@
+{
+  "name": "sports",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david-saint/sports.git"
+  },
+  "author": "David Saint",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david-saint/sports/issues"
+  },
+  "homepage": "https://github.com/david-saint/sports#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "laravel-mix": "^2.1.14"
+  }
+}
