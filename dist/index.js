@@ -79,7 +79,7 @@ __webpack_require__(2);
 
 __webpack_require__(4);
 
-console.log('Hello, World');
+console.log('Hello Bitch');
 
 /***/ }),
 /* 2 */

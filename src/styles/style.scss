@@ -4,11 +4,11 @@ $primary-color: #001A43;
 $secondary-color: #EF2339;
 
 body {
-	font-size: 10px;
-	font-family: 'Montserrat';
-	color: #333333;
-	margin: 0;
-	padding: 0;
+  font-size: 10px;
+  font-family: 'Montserrat';
+  color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -161,12 +161,27 @@ main {
     width: 100%;
     height: 480px;
     position: relative;
-    background: linear-gradient(0deg, rgba(51, 51, 51, 0.2), rgba(51, 51, 51, 0.2)), linear-gradient(180.1deg, rgba(0, 0, 0, 0) 77.07%, rgba(0, 0, 0, 0.7) 99.89%), url(../img/3a546a87a666937e240c389f6c8bbe49.jpg);
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
     margin-bottom: 20px;
-
+    .img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      .ovl {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        content: ' ';
+        background: linear-gradient(0deg, rgba(51, 51, 51, 0.2), rgba(51, 51, 51, 0.2)), linear-gradient(180.1deg, rgba(0, 0, 0, 0) 77.07%, rgba(0, 0, 0, 0.7) 99.89%);
+      }
+      img {
+        width: 100%;
+        height: auto;
+        min-height: 100%
+      }
+    }
     .ab {
       position: absolute;
       bottom: 0;
@@ -198,15 +213,23 @@ main {
   .news {
     height: 150px;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
 
     .image {
-      height: 100%;
-      background-repeat: no-repeat;
-      background-position: top center;
-      background-image: url(../img/d87ce7d37f4aca78513a7272c91fa64e.jpg);
       content: '';
       background-size: cover;
       border-radius: 3px;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      img {
+        border-radius: 3px;
+        width: 100%;
+        height: auto;
+      }
     }
     .bd {
       display: flex;
@@ -256,12 +279,28 @@ section.rs {
   width: 100%;
   height: calc(100vh - 64px);
   position: relative;
-  background: linear-gradient(0deg, rgba(51, 51, 51, 0.2), rgba(51, 51, 51, 0.2)), linear-gradient(180.1deg, rgba(0, 0, 0, 0) 77.07%, rgba(0, 0, 0, 0.7) 99.89%), url(../img/3a546a87a666937e240c389f6c8bbe49.jpg);
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
   margin-bottom: 10px;
-
+  
+  .img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    .ovl {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      content: ' ';
+      background: linear-gradient(0deg, rgba(51, 51, 51, 0.2), rgba(51, 51, 51, 0.2)), linear-gradient(180.1deg, rgba(0, 0, 0, 0) 77.07%, rgba(0, 0, 0, 0.7) 99.89%);
+    }
+    img {
+      width: 100%;
+      height: auto;
+      min-height: 100%
+    }
+  }
   .ab {
     position: absolute;
     bottom: 0;
