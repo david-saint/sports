@@ -13,7 +13,6 @@ const mix = require('laravel-mix');
 
 mix.js('src/index.js', 'dist')
   .sass('src/styles/app.scss', 'dist')
-  .browserSync('sports-blog.local')
   .setPublicPath('/');
 
 // Full API
@@ -53,3 +52,11 @@ mix.js('src/index.js', 'dist')
 //   uglify: {}, // Uglify-specific options. https://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
 //   postCss: [] // Post-CSS options: https://github.com/postcss/postcss/blob/master/docs/plugins.md
 // });
+
+const LiveReloadPlugin = require('webpack-livereload-plugin');
+
+mix.webpackConfig({
+  plugins: [
+    new LiveReloadPlugin(),
+  ],
+});

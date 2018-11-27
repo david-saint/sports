@@ -22,6 +22,10 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "browser-sync-webpack-plugin": "^2.2.2",
-    "laravel-mix": "^2.1.14"
+    "laravel-mix": "^2.1.14",
+    "webpack-livereload-plugin": "1"
+  },
+  "dependencies": {
+    "materialize-css": "^1.0.0"
   }
 }
