@@ -10452,6 +10452,106 @@ footer .bottom .r {
   color: #333333;
 }
 
+.imgtxt {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.imgtxt .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgtxt .img .ovl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: ' ';
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.2), rgba(51, 51, 51, 0.2)), linear-gradient(180.1deg, rgba(0, 0, 0, 0) 77.07%, rgba(0, 0, 0, 0.7) 99.89%);
+}
+
+.imgtxt .img img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+.imgtxt .ab {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.imgtxt .content {
+  color: #FFFFFF;
+}
+
+.imgtxt .content .context {
+  margin: 30px 20px 30px 20px;
+  width: 70%;
+}
+
+.imgtxt .content .context .label {
+  border-radius: 3px;
+  background-color: #EF2339;
+  font-weight: 800;
+  padding: 2px 5px;
+}
+
+.imgtxt .content .context p {
+  margin: 10px 0;
+  font-weight: 800;
+  font-size: 24px;
+  width: 100%;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.imgtxt .content .context p.sub {
+  font-weight: 300;
+  font-size: 22px;
+  width: 100%;
+}
+
+.imgtxt.bigger .content .context p {
+  font-size: 36px;
+}
+
+.category-hero .category-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.category-hero .category-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.category-hero .category-contain .bigger {
+  padding: 0;
+}
+
+.category-hero .category-contain .normal {
+  padding: 0;
+}
+
 hr {
   margin: 0;
 }
